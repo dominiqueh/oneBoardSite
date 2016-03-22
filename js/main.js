@@ -4,8 +4,21 @@ angular
 
   function MainRouter($stateProvider, $urlRouterProvider){
     $stateProvider
+      .state('home', {
+        url:"/home",
+        templateUrl:"home.html"
+      })
       .state('portfolio', {
-        url:"/portfolio.html",
+        url:"/portfolio",
         templateUrl: "portfolio.html",
+      })
+      .state('blog', {
+        url:"/blog",
+        templateUrl: "blog.html",
+      })
+      .state('contact',{
+        url:"/contact",
+        templateUrl: "contact.html",
       });
+      $urlRouterProvider.otherwise('/home')
   }

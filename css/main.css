@@ -32,6 +32,15 @@ html, body {
   background-size: 1450px 810px;
   background-repeat: no-repeat;
 }
+#home-slide{
+  background-image: url('../image/blackwhite/home.jpg');
+}
 #portfolio-slide{
-  background-image:
+  background-image: url('../image/reflection.JPG');
+}
+#blog-slide{
+  background-image: url('../image/eventphoto.jpg');
+}
+#contact-slide{
+  background-image: url('..image/Pinja.jpg');
 }
