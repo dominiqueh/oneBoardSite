@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="artApp" ng-controller="artworkController">
 <head>
   <meta charset="utf-8">
 
@@ -11,15 +11,18 @@
   <script src="js/angular-ui-router.js"></script>
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Redressed|Josefin+Sans" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers.js"></script>
   <!-- end of links -->
   <title>Pinja the Pirate</title>
 </head>
-<body ng-app="artApp" ng-controller="artworkController">
+<body>
 
   <!--  =+=+=+==+=+=+==+=+=+=     Navigation Bar      =+=+=+==+=+=+==+=+=+= -->
 
   <nav class="navbar navbar-default navbar-fixed-top tabstyle" role="navigation">
-    <div class="container-fluid">
+    <div class="container-fluid ui-view">
       <div class="navbar-header">
         <a class="navbar-brand"   ui-sref="home" ui-sref-active="active"> Pinja Naamanka </a>
       </div>
@@ -35,12 +38,15 @@
 
   <!--  =+=+=+==+=+=+==+=+=+=     Body      =+=+=+==+=+=+==+=+=+= -->
 
-  <div class="container-fluid" ui-view>
-    <!-- content will go here from partials -->
+  <div class="container-fluid main-slide">
+    <div>
+      <input type="text" ng-model="yourName" placeholder="Enter a Name Please: ">
+      <h1>Hello, {{yourName!}}</h1>
+    </div>
   </div>
 
   <!--  =+=+=+==+=+=+==+=+=+=     Javacript Pages Linked      =+=+=+==+=+=+==+=+=+= -->
 
-  <script src="js/main.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

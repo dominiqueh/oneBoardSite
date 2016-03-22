@@ -1,10 +1,10 @@
 angular.module('artApp.controllers', []).
 controller('artworkController', function($scope) {
-    $scope.driversList = [
+    $scope.artwork = [
       {
-          Driver: {
-              givenName: 'Sebastian',
-              familyName: 'Vettel'
+          Piece: {
+              title: 'Reflection',
+              category: 'Vettel'
           },
           points: 322,
           nationality: "German",
@@ -12,16 +12,5 @@ controller('artworkController', function($scope) {
               {name: "Red Bull"}
           ]
       },
-      {
-          Driver: {
-          givenName: 'Fernando',
-              familyName: 'Alonso'
-          },
-          points: 207,
-          nationality: "Spanish",
-          Constructors: [
-              {name: "Ferrari"}
-          ]
-      }
     ];
 });
