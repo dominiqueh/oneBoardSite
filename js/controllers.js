@@ -3,7 +3,9 @@
   .controller('artCtrl', artController)
 
   function artController(){
-    var ac = this
+      var ac = this
+
+  // <!--  =+=+=+==+=+=+==+=+=+=    Hard Coded Images in List      =+=+=+==+=+=+==+=+=+= -->
     ac.artCollection = [
       {
         title : 'Stairway to Heaven',
@@ -21,35 +23,38 @@
         category : 'portrait'
       },
       {
-        title : 'meh',
-        image : '../image/blackwhite/_MG_7396.jpg',
+        title : 'Lost Boys',
+        image : '../image/blackwhite/LostBoys.jpg',
         category : 'travel'
       },
       {
-        title : 'meh',
-        image : '../image/blackwhite/_MG_7396.jpg',
+        title : 'Help',
+        image : 'image/blackwhite/help.jpg',
+        category : 'portrait'
+      },
+      {
+        title : 'Lisbon Dogs',
+        image : '../image/blackwhite/LisbonDogs.jpg',
         category : 'travel'
       },
       {
-        title : 'meh',
-        image : '../image/blackwhite/_MG_7396.jpg',
-        category : 'travel'
+        title : 'Crossed Arms',
+        image : '../image/blackwhite/CrossedArms.jpg',
+        category : 'Portait'
       },
       {
-        title : 'meh',
-        image : '../image/blackwhite/_MG_7396.jpg',
-        category : 'travel'
+        title : 'Confused Party',
+        image : '../image/color/confusedparty.jpg',
+        category : 'Event'
       },
       {
-        title : 'meh',
-        image : '../image/blackwhite/_MG_7396.jpg',
-        category : 'travel'
+        title : 'Great Laugh',
+        image : '../image/color/laughter.jpg',
+        category : 'Event'
       },
     ]
-    // ac.sortArtCollection = sortArtCollection
-    // ac.sortArtCollection()
-    // function sortArtCollection(){
-    // }
+
+  //  =+=+=+==+=+=+==+=+=+=    Constructor Function for Photos     =+=+=+==+=+=+==+=+=+= 
     function artWork(title,image,category){
       this.artTitle     = title
       this.artImage     = image
