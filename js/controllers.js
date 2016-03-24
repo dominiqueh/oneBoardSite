@@ -54,16 +54,12 @@
       },
     ]
 
-  //  =+=+=+==+=+=+==+=+=+=    Constructor Function for Photos     =+=+=+==+=+=+==+=+=+= 
+  //  =+=+=+==+=+=+==+=+=+=    Constructor Function for Photos     =+=+=+==+=+=+==+=+=+=
     function artWork(title,image,category){
       this.artTitle     = title
       this.artImage     = image
       this.artCategory  = category
     }
-
-
-
-
 
   }
 }())

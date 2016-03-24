@@ -1,8 +1,5 @@
 <div class="row" ng-controller="artCtrl">
-  <label class="checkbox-inline"><input type="checkbox" value="Portrait">Portrait</label>
-  <label class="checkbox-inline"><input type="checkbox" value="travel">Travel</label>
-  <label class="checkbox-inline"><input type="checkbox" value="Event">Event</label>
-  <div class="main-slide" id="portfolio-slide" ng-repeat="artWork in artCtrl.ArtCollection" ng-click="">
-    <h4>View Artwork Below</h4>
+  <div class="main-slide" id="portfolio-slide" ng-repeat="artWork in artCtrl.artCollection">
+    <img class="grid-image" ng-src="{{lizard.lizImage}}"/>
   </div>
 </div>
