@@ -1,13 +1,9 @@
-UI
-  Static Pages
-    Landing Page
-    Portfolio
-      Series
-      Categories
-    Blog
-    Contact
+Boostrap
+  Dropdown tab
 Angular
+  Filter
 Firebase
+  CMS
 
 
 Further Styling
