@@ -13,3 +13,4 @@ Firebase
 Further Styling
   Parallax
   Text Box Overlay on Images in Blog
+  Popover for Blog

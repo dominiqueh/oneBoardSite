@@ -6,19 +6,19 @@ angular
     $stateProvider
       .state('home', {
         url:"/",
-        templateUrl:"home.html",
+        templateUrl:"partials/home.html",
       });
       .state('portfolio', {
         url:"/portfolio",
-        templateUrl: "portfolio.html",
+        templateUrl: "partials/portfolio.html",
       });
       .state('blog', {
         url:"/blog",
-        templateUrl: "blog.html",
+        templateUrl: "partials/blog.html",
       });
       .state('contact',{
         url:"/contact",
-        templateUrl: "contact.html",
+        templateUrl: "partials/contact.html",
       });
-      $urlRouterProvider.otherwise('/home')
+      $urlRouterProvider.otherwise('/')
   }
