@@ -1,5 +1,5 @@
 angular
-  .module('artApp',['ui.router']);
+  .module('artApp', ['ui.router']);
   .config(MainRouter);
 
   function MainRouter($stateProvider, $urlRouterProvider){
