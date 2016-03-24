@@ -25,22 +25,24 @@ a {
 
 html, body {
   height: 100%;
+
 }
 /* background images for site */
 .main-slide {
   height: 810px;
-  background-image: url('../image/blackwhite/home.jpg');
   background-size: 1450px 810px;
   background-repeat: no-repeat;
+  background-position: center;
+
 }
 #home-slide{
-  background-image: url('../image/blackwhite/reflection.JPG');
+  background-image: url('../image/blackwhite/home.jpg');
 }
 #portfolio-slide{
   background-image: url('../image/color/party.jpg');
 }
 #blog-slide{
-  background-image: url('../image/color/RitaFaceIMG_0523.jpg');
+  background-image: url('../image/blackwhite/reflection.JPG');
 }
 #contact-slide{
   background-image: url('../image/site/Pinja.jpg');

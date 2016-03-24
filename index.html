@@ -6,15 +6,9 @@
   <!--  =+=+=+==+=+=+==+=+=+=     Styles and libraries linked     =+=+=+==+=+=+==+=+=+= -->
 
   <!-- Functionality Links -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.js"></script>
-  <script type="text/javascript" src="js/angular-ui-router.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
-  <script type="text/javascript" src="js/controllers.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
 
   <!-- Styling Links -->
-
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Redressed|Josefin+Sans" rel="stylesheet" type="text/css">
@@ -27,7 +21,7 @@
   <!--  =+=+=+==+=+=+==+=+=+=     Navigation Bar      =+=+=+==+=+=+==+=+=+= -->
 
   <nav class="navbar navbar-default navbar-fixed-top tabstyle" role="navigation">
-    <div class="container-fluid ui-view">
+    <div class="container-fluid">
       <div class="navbar-header">
         <a ui-sref-active="active" ui-sref="home" class="navbar-brand"> Pinja Naamanka </a>
       </div>
@@ -35,7 +29,7 @@
         <li><a ui-sref-active="active" ui-sref="portfolio"> Portfolio</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a ui-sref-active="active" ui-sref="blog"     > Blog</a></li>
+        <li><a ui-sref="blog"> Blog</a></li>
         <li><a ui-sref-active="active" ui-sref="contact"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
       </ul>
     </div>
@@ -43,11 +37,15 @@
 
   <!--  =+=+=+==+=+=+==+=+=+=     Body      =+=+=+==+=+=+==+=+=+= -->
 
-  <div class="container-fluid ui-view main-slide">
+  <div ui-view class="container-fluid main-slide">
     <!-- Partials will fill in content here -->
   </div>
 
   <!--  =+=+=+==+=+=+==+=+=+=       End of Body      =+=+=+==+=+=+==+=+=+= -->
-
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+  <script type="text/javascript" src="js/controllers.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

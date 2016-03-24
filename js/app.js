@@ -1,4 +1,1 @@
-// var app = angular.module('myApp', []);
-angular.module('artApp', [
-  'artApp.controllers'
-]);
+angular.module('artApp', ['appRoutes','artControllers'])
