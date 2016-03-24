@@ -5,17 +5,17 @@ angular
   function MainRouter($stateProvider, $urlRouterProvider){
     $stateProvider
       .state('home', {
-        url:"/home",
-        templateUrl:"home.html"
-      })
+        url:"/",
+        templateUrl:"home.html",
+      });
       .state('portfolio', {
         url:"/portfolio",
         templateUrl: "portfolio.html",
-      })
+      });
       .state('blog', {
         url:"/blog",
         templateUrl: "blog.html",
-      })
+      });
       .state('contact',{
         url:"/contact",
         templateUrl: "contact.html",
