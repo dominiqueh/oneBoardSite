@@ -1,13 +1,13 @@
 <div class="row portContainer">
   <br><br><br>
   <!-- checkboxes for filtering -->
-  <input type="checkbox" ng-click="includePref('portrait')"/> Portrait
-  <input type="checkbox" ng-click="includePref('travel')"/> Travel
-  <input type="checkbox" ng-click="includePref('event')"/> Event</br>
+  <input type="checkbox" ng-click="includeArt('portrait')"/> Portrait
+  <input type="checkbox" ng-click="includeArt('travel')"/> Travel
+  <input type="checkbox" ng-click="includeArt('event')"/> Event</br>
 
   <!--  photo content to be displayed-->
-  <div class="photo-box" ng-repeat="artWork in ac.artCollection | filter: userPrefs">
-    <img class="grid-photo" src="{{artWork.image}}"/>
+  <div class="photo-box" ng-repeat="photo in this.artCtrl | filter: photoFilter">
+    <img class="grid-photo" src="{{photo.image}}"/>
 
   </div>
 </div>
