@@ -1,1 +1,1 @@
-angular.module('artApp', ['appRoutes','artControllers'])
+angular.module('artApp', ['appRoutes','photo'])

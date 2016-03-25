@@ -16,10 +16,9 @@
 
   <title>Pinja the Pirate</title>
 </head>
-<body ng-controller="artCtrl">
+<body ng-controller="artCtrl" class="container-fluid">
 
   <!--  =+=+=+==+=+=+==+=+=+=     Navigation Bar      =+=+=+==+=+=+==+=+=+= -->
-<div class="container-fluid">
   <nav class="navbar navbar-default navbar-fixed-top nav-tabs" role="navigation">
       <div class="navbar-header">
         <a ui-sref-active="active" ui-sref="home" class="navbar-brand"> Pinja Naamanka </a>
@@ -32,10 +31,10 @@
         <li><a ui-sref-active="active" ui-sref="contact"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
       </ul>
   </nav>
-    </div>
+
 
   <!--  =+=+=+==+=+=+==+=+=+=     Body      =+=+=+==+=+=+==+=+=+= -->
-  <div ui-view class=" main-container">
+  <div ui-view class="main-slide">
     <!-- Partials will fill in content here -->
   </div>
 

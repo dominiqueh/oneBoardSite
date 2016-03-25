@@ -2,47 +2,54 @@
 /* Resets ******************************************************************* */
 /* ************************************************************************** */
 
-* {
+/** {
   box-sizing: border-box;
   margin: 0 auto;
-}
+}*/
 
 /* ************************************************************************** */
 /* Page-Level Typography ******************************************************************* */
 /* ************************************************************************** */
 
-a {
+/*a {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
 }
 .navbar-brand{
   font-family: 'Redressed', cursive;
-}
+}*/
 
 /* ************************************************************************** */
 /* General Page Structure *************************************************** */
 /* ************************************************************************** */
 
-html, body {
+/*html, body {
   height: 100%;
-}
-.main-container {
+}*/
+/*.main-slide{
   width: 90vw;
   height: 100vw;
-}
+}*/
 #home-slide{
-  background-image: url('../image/blackwhite/home.jpg');
-  background-size: 1450px 810px;
+  margin-top: 60px;
+  height: 810px;
+  background-image: url('../image/blackwhite/reflection.JPG');
   background-repeat: no-repeat;
+  background-size: 1450px 810px;
+  /*background-attachment: fixed;*/
   background-position: center;
 }
 #blog-slide{
+  margin-top: 60px;
+  height: 810px;
   background-image: url('../image/blackwhite/reflection.JPG');
   background-size: 1450px 810px;
   background-repeat: no-repeat;
   background-position: center;
 }
 #contact-slide{
+  margin-top: 60px;
+  height: 810px;
   background-image: url('../image/site/Pinja.jpg');
   background-size: 1450px 810px;
   background-repeat: no-repeat;
@@ -53,12 +60,12 @@ html, body {
 /* Navigation Bar  *************************************************** */
 /* ************************************************************************** */
 
-nav.tabstyle a.active {
+/*nav.tabstyle a.active {
   background: rgba(255,255,255,1);
-}
-.navbar {
+}*/
+/*.navbar {
   display:block;
-}
+}*/
 
 
 /* ************************************************************************** */

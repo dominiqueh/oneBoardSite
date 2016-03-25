@@ -1,14 +1,20 @@
 <div class="row portContainer">
   <br><br><br>
   <!-- checkboxes for filtering -->
-  <input type="checkbox" ng-click="includeArt('portrait')"/> Portrait
-  <input type="checkbox" ng-click="includeArt('travel')"/> Travel
-  <input type="checkbox" ng-click="includeArt('event')"/> Event</br>
+  <input type="checkbox" ng-click="includeArt('portrait')" checked="true"/> Portrait
+  <input type="checkbox" ng-click="includeArt('travel')" checked="true" /> Travel
+  <input type="checkbox" ng-click="includeArt('event')" checked="true"/> Event
+
 
   <!--  photo content to be displayed-->
-  <div class="photo-box" ng-repeat="photo in this.artCtrl | filter: photoFilter">
+  <!-- <div class="photo-box" ng-repeat="photo in photos ">
     <img class="grid-photo" src="{{photo.image}}"/>
-
+  </div> -->
+  <div class="row"  >
+  <div class="col-xs-6 col-md-3" ng-repeat="photo in photos | filter:photoFilter">
+    <a href="#" class="thumbnail" >
+      <img class="" src="{{photo.image}}"/>
+    </a>
   </div>
 </div>
 </div>

@@ -1,59 +1,59 @@
 (function() {
-  'use strict';
 
   angular.module('photo', [])
+  .controller ("artCtrl", artCtrl)
 
   function artCtrl ($scope) {
-    $scope.photo = [
+    console.log("test");
+    $scope.photos = [
       {
         title : 'Stairway to Heaven',
         image : '../image/blackwhite/stairwaytoheaven.jpg',
         category : 'travel',
       },
-      // {
-      //   title : 'Doorception',
-      //   image : '../image/blackwhite/doorway.jpg',
-      //   category : 'travel',
-      // },
+      {
+        title : 'Doorception',
+        image : '../image/blackwhite/doorway.jpg',
+        category : 'travel',
+      },
       {
         title : 'Wino',
         image : '../image/blackwhite/wino.jpg',
         category : 'portrait',
       },
-      // {
-      //   title : 'Lost Boys',
-      //   image : '../image/blackwhite/LostBoys.jpg',
-      //   category : 'travel',
-      // },
-      // {
-      //   title : 'Help',
-      //   image : '../image/blackwhite/help.jpg',
-      //   category : 'portrait',
-      // },
-      // {
-      //   title : 'Lisbon Dogs',
-      //   image : '../image/blackwhite/LisbonDogs.jpg',
-      //   category : 'travel',
-      // },
-      // {
-      //   title : 'Crossed Arms',
-      //   image : '../image/blackwhite/CrossedArms.jpg',
-      //   category : 'portait',
-      // },
+      {
+        title : 'Lost Boys',
+        image : '../image/blackwhite/LostBoys.jpg',
+        category : 'travel',
+      },
+      {
+        title : 'Help',
+        image : '../image/blackwhite/help.jpg',
+        category : 'portrait',
+      },
+      {
+        title : 'Lisbon Dogs',
+        image : '../image/blackwhite/LisbonDogs.jpg',
+        category : 'travel',
+      },
+      {
+        title : 'Crossed Arms',
+        image : '../image/blackwhite/CrossedArms.jpg',
+        category : 'portait',
+      },
       {
         title : 'Confused Party',
         image : '../image/color/confusedparty.jpg',
         category : 'event',
       },
-      // {
-      //   title : 'Great Laugh',
-      //   image : '../image/color/laughter.jpg',
-      //   category : 'event',
-      // },
+      {
+        title : 'Great Laugh',
+        image : '../image/color/laughter.jpg',
+        category : 'event',
+      },
     ]
-  }
 
-  $scope.photoIncludes = []
+  $scope.photoIncludes = ['travel','event','portrait']
 
   $scope.includeArt = function(photo) {
     var i = $.inArray(photo, $scope.photoIncludes);
@@ -66,12 +66,14 @@
 
   $scope.photoFilter = function (photo) {
     if ($scope.photoIncludes.length > 0) {
-      if ($.inArray(photo.category, $scope.photoIncludes) < 0)
+      if ($.inArray(photo.category, $scope.photoIncludes) < 0){
       return;
     }
     return photo;
   }
 }
+}
+
 
 }());
 
