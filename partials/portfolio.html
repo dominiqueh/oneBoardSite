@@ -6,7 +6,7 @@
   <input type="checkbox" ng-click="includePref('event')"/> Event</br>
 
   <!--  photo content to be displayed-->
-  <div class="photo-box" ng-repeat="artWork in ac.artCollection | filter: prefFilter">
+  <div class="photo-box" ng-repeat="artWork in ac.artCollection | filter: userPrefs">
     <img class="grid-photo" src="{{artWork.image}}"/>
 
   </div>
