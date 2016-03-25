@@ -4,11 +4,17 @@
   .controller ("artCtrl", artCtrl)
 
   /* ************************************************************************** */
+  /* Image Upload Form Control ******************************************************************* */
+  /* ************************************************************************** */
+
+
+  /* ************************************************************************** */
   /* Hard Coded Images ******************************************************************* */
   /* ************************************************************************** */
 
   function artCtrl ($scope) {
-    console.log("test");
+    $scope.tempPhoto = {}
+
     $scope.photos = [
       {
         title : 'Stairway to Heaven',
@@ -84,6 +90,13 @@
     return photo;
   }
 }
+
+  $scope.addPhoto = function (){
+    console.log("addingPhoto", $scope.tempPhoto)
+    $scope.photos.push($scope.tempPhoto)
+    $scope.tempPhoto = {}
+  }
+
 }
 
 

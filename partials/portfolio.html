@@ -13,7 +13,7 @@
   *********************************** Artist Portfolio, Filters to Show User Prefs **************************
   *********************************************************************************************************** -->
 
-  <div class="row"  >
+  <div class="row" >
     <div class="col-xs-6 col-md-3" ng-repeat="photo in photos | filter:photoFilter">
       <a href="#" class="thumbnail" >
         <img class="" src="{{photo.image}}"/>
@@ -24,30 +24,34 @@
   <!--********************************************************************************************************
   *********************************** Form to Upload Photos *************************************************
   *********************************************************************************************************** -->
+
   <div class="row col-xs-6 col-md-3 form-container">
     <h4>Upload to Porfolio</h4>
-    <form>
+    <form ng-submit="addPhoto()">
+
       <!--*************************************** Upload Photo *************************************** -->
+
       <fieldset class="form-group">
         <label class="file">
-          <input type="file" id="file">
+          <input ng-model="tempPhoto.image" type="text" id="file">
           <span class="file-custom"></span>
         </label>
       </fieldset>
+
       <!-- *************************************** Category Select ***************************************-->
 
       <fieldset class="form-group">
         <label for="exampleSelect1">Category Select</label>
-        <select name="categories" class="form-control" id="categorySelect">
+        <select ng-model="tempPhoto.category" name="category" class="form-control" id="categorySelect">
           <option value="event">Event</option>
           <option value="portrait">Portrait</option>
           <option value="travel">Travel</option>
         </select>
       </fieldset>
 
-        <!-- *************************************** Submit ***************************************-->
+      <!-- *************************************** Submit ***************************************-->
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
   <!-- *************************************** End of Form ***************************************-->
