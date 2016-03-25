@@ -6,51 +6,52 @@
       var ac = this
 
   // <!--  =+=+=+==+=+=+==+=+=+=    Hard Coded Images in List      =+=+=+==+=+=+==+=+=+= -->
+
     ac.artCollection = [
       {
         title : 'Stairway to Heaven',
         image : '../image/blackwhite/stairwaytoheaven.jpg',
-        category : 'travel'
+        category : 'travel',
       },
       {
         title : 'Doorception',
         image : '../image/blackwhite/doorway.jpg',
-        category : 'travel'
+        category : 'travel',
       },
       {
         title : 'Wino',
         image : '../image/blackwhite/wino.jpg',
-        category : 'portrait'
+        category : 'portrait',
       },
       {
         title : 'Lost Boys',
         image : '../image/blackwhite/LostBoys.jpg',
-        category : 'travel'
+        category : 'travel',
       },
       {
         title : 'Help',
-        image : 'image/blackwhite/help.jpg',
-        category : 'portrait'
+        image : '../image/blackwhite/help.jpg',
+        category : 'portrait',
       },
       {
         title : 'Lisbon Dogs',
         image : '../image/blackwhite/LisbonDogs.jpg',
-        category : 'travel'
+        category : 'travel',
       },
       {
         title : 'Crossed Arms',
         image : '../image/blackwhite/CrossedArms.jpg',
-        category : 'Portait'
+        category : 'Portait',
       },
       {
         title : 'Confused Party',
         image : '../image/color/confusedparty.jpg',
-        category : 'Event'
+        category : 'Event',
       },
       {
         title : 'Great Laugh',
         image : '../image/color/laughter.jpg',
-        category : 'Event'
+        category : 'Event',
       },
     ]
 

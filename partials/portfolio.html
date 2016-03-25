@@ -1,5 +1,5 @@
-<div class="row" ng-controller="artCtrl">
-  <div class="main-slide" id="portfolio-slide" ng-repeat="artWork in artCtrl.artCollection">
-    <img class="grid-img" ng-src="{{.}}"/>
+<div class="row">
+  <div class="main-slide" id="portfolio-slide" ng-repeat="artWork in ac.artCollection">
+    <img class="grid-img" src="{{artWork.image}}"/>
   </div>
 </div>
