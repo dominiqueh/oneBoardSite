@@ -26,26 +26,28 @@ a {
 html, body {
   height: 100%;
 }
+
 .main-container {
+  width: 90vw;
+  height: 100vw;
+}
+#home-slide{
+  background-image: url('../image/blackwhite/home.jpg');
   background-size: 1450px 810px;
   background-repeat: no-repeat;
   background-position: center;
-  width: 100vw;
-  height: 100vw;
-}
-.portfolio_container{
-  width: 100vw;
-  height: 100vw;
-}
-/* background images for site */
-#home-slide{
-  background-image: url('../image/blackwhite/home.jpg');
 }
 #blog-slide{
   background-image: url('../image/blackwhite/reflection.JPG');
+  background-size: 1450px 810px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 #contact-slide{
   background-image: url('../image/site/Pinja.jpg');
+  background-size: 1450px 810px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* ************************************************************************** */
@@ -59,13 +61,13 @@ nav.tabstyle a.active {
 /* ************************************************************************** */
 /* Portfolio Grid Styling *************************************************** */
 /* ************************************************************************** */
-
-.grid-img {
-      height: auto;
-      width: auto;
-      max-width: 300px;
-      max-height: 300px;
-      padding: 2px 2px 2px 2px;
-      display: inline;
-  }
+.photo-box{
+  display: inline-block;
+  margin: 5px;
+}
+.grid-photo{
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 300px;
 }
