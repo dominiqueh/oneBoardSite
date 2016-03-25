@@ -26,18 +26,20 @@ a {
 html, body {
   height: 100%;
 }
-/* background images for site */
-.main-slide {
+.main-container {
   background-size: 1450px 810px;
   background-repeat: no-repeat;
   background-position: center;
-
+  width: 100vw;
+  height: 100vw;
 }
+.portfolio_container{
+  width: 100vw;
+  height: 100vw;
+}
+/* background images for site */
 #home-slide{
   background-image: url('../image/blackwhite/home.jpg');
-}
-#portfolio-slide{
-  background-image: url('../image/color/party.jpg');
 }
 #blog-slide{
   background-image: url('../image/blackwhite/reflection.JPG');
@@ -64,5 +66,6 @@ nav.tabstyle a.active {
       max-width: 300px;
       max-height: 300px;
       padding: 2px 2px 2px 2px;
+      display: inline;
   }
 }
