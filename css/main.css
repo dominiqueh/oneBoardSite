@@ -22,40 +22,90 @@ a {
 /* ************************************************************************** */
 /* General Page Structure *************************************************** */
 /* ************************************************************************** */
+#navbar{
+  display: block;
+}
+
+#content-container{
+height: 900px;
+width: 700px;
+margin: 90px 100px 10px 10px;
+}
 
 #home-slide{
-  margin-top: 60px;
-  height: 810px;
-  background-image: url('../image/blackwhite/reflection.JPG');
+  /*background-image: url('../image/blackwhite/home.jpg');
   background-repeat: no-repeat;
   background-size: 1450px 810px;
-  /*background-attachment: fixed;*/
-  background-position: center;
+  background-position: center;*/
 }
 #blog-slide{
-  margin-top: 60px;
-  height: 810px;
-  background-image: url('../image/blackwhite/reflection.JPG');
-  background-size: 1450px 810px;
+  /*background-image: url('../image/blackwhite/reflection.JPG');
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: 1450px 810px;
+  background-position: center;*/
 }
 #contact-slide{
-  margin-top: 60px;
-  height: 810px;
-  background-image: url('../image/site/Pinja.jpg');
+  /*background-image: url('../image/site/Pinja.jpg');
   background-size: 1450px 810px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center;*/
 }
 
 /* ************************************************************************** */
 /* Navigation Bar  *************************************************** */
 /* ************************************************************************** */
 
-/*nav.tabstyle a.active {
-  background: rgba(255,255,255,1);
-}*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* ************************************************************************** */
+/*Home Styling *************************************************** */
+/* ************************************************************************** */
+.home-container{
+  height: 900px;
+  margin: 60px 10px 5px;
+  display:inline-block;
+}
+
+.homeImg {
+  max-width: 95vw;
+  display: block;
+}
+/* ************************************************************************** */
+/* Blog Styling *************************************************** */
+/* ************************************************************************** */
+.contact-container{
+  height: 900px;
+  margin: 90px 10px 5px;
+  display:inline-block;
+}
+.blogImg {
+  max-width: 95vw;
+  display: block;
+}
+
+/* ************************************************************************** */
+/* Contact Styling *************************************************** */
+/* ************************************************************************** */
+.contact-container{
+  height: 900px;
+  margin: 60px 90px 5px;
+  display:inline-block;
+}
+.pinjaContact {
+  max-width: 40vw;
+  display: inline-block;
+  float: left;
+}
+
+.formContact {
+  margin: 100px 40px;
+  text-align: left;
+  max-width: 30vw;
+  display:inline-block;
+  border-radius: 10px;
+}
 
 /* ************************************************************************** */
 /* Portfolio Grid Styling *************************************************** */
