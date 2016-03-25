@@ -53,9 +53,9 @@ a {
 /* Navigation Bar  *************************************************** */
 /* ************************************************************************** */
 
-nav.tabstyle a.active {
+/*nav.tabstyle a.active {
   background: rgba(255,255,255,1);
-}
+}*/
 
 /* ************************************************************************** */
 /* Portfolio Grid Styling *************************************************** */
@@ -75,6 +75,7 @@ nav.tabstyle a.active {
 }
 /* ******************* Form Styling ******************* */
 .form-container{
-  width: 30vw;
-  height: 30vw;
+text-align: center;
+margin-left: 400px;
+background-color: #C9C9C9;
 }
