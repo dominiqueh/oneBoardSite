@@ -18,6 +18,10 @@ a {
 .navbar-brand{
   font-family: 'Redressed', cursive;
 }
+html, body{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 14px;
+}
 
 /* ************************************************************************** */
 /* General Page Structure *************************************************** */
@@ -27,7 +31,7 @@ a {
 }
 
 #content-container{
-height: 900px;
+height: 1200px;
 width: 700px;
 margin: 90px 100px 10px 10px;
 }
@@ -115,7 +119,6 @@ img {
 }
 .photo-box{
   display: inline-block;
-  margin: 5px;
 }
 .grid-photo{
   height: auto;

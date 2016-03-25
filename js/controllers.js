@@ -22,18 +22,13 @@
         category : 'travel',
       },
       {
-        title : 'Doorception',
-        image : '../image/blackwhite/doorway.jpg',
-        category : 'travel',
-      },
-      {
-        title : 'Wino',
-        image : '../image/blackwhite/wino.jpg',
+        title : 'Rita',
+        image : '../image/color/RitaLumbersexual.jpg',
         category : 'portrait',
       },
       {
-        title : 'Lost Boys',
-        image : '../image/blackwhite/LostBoys.jpg',
+        title : 'Doorception',
+        image : '../image/blackwhite/doorway.jpg',
         category : 'travel',
       },
       {
@@ -42,14 +37,14 @@
         category : 'portrait',
       },
       {
-        title : 'Lisbon Dogs',
-        image : '../image/blackwhite/LisbonDogs.jpg',
-        category : 'travel',
+        title : 'Wino',
+        image : '../image/blackwhite/wino.jpg',
+        category : 'portrait',
       },
       {
         title : 'Crossed Arms',
         image : '../image/blackwhite/CrossedArms.jpg',
-        category : 'portait',
+        category : 'portrait',
       },
       {
         title : 'Confused Party',
@@ -61,6 +56,28 @@
         image : '../image/color/laughter.jpg',
         category : 'event',
       },
+      {
+        title : 'Lost Boys',
+        image : '../image/blackwhite/LostBoys.jpg',
+        category : 'travel',
+      },
+      {
+        title : 'Walker',
+        image : '../image/blackwhite/walkerIMG_4955.jpg',
+        category : 'travel',
+      },
+      {
+      title : 'Manny',
+      image : '../image/color/Manny.jpg',
+      category : 'portrait',
+    },
+    {
+      title : 'Rita Tunnel',
+      image : '../image/blackwhite/IMG_3200.jpg',
+      category : 'travel',
+    }
+
+
     ]
 
     /* ************************************************************************** */

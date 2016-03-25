@@ -16,7 +16,7 @@
   <div class="row" >
     <div class="col-xs-6 col-md-3" ng-repeat="photo in photos | filter:photoFilter">
       <a href="#" class="thumbnail" >
-        <img class="" src="{{photo.image}}"/>
+        <img class="grid-photo" src="{{photo.image}}"/>
       </a>
     </div>
   </div>
@@ -25,7 +25,7 @@
   *********************************** Form to Upload Photos *************************************************
   *********************************************************************************************************** -->
 
-  <div class="row col-xs-6 col-md-3 form-container">
+  <div class="row col-xs-12 col-sm-6 col-md-3 form-container">
     <h4>Upload to Porfolio</h4>
     <form ng-submit="addPhoto()">
 
@@ -55,5 +55,6 @@
     </form>
   </div>
   <!-- *************************************** End of Form ***************************************-->
+<br><br><br>
 
 </div>
