@@ -41,23 +41,25 @@
       {
         title : 'Crossed Arms',
         image : '../image/blackwhite/CrossedArms.jpg',
-        category : 'Portait',
+        category : 'portait',
       },
       {
         title : 'Confused Party',
         image : '../image/color/confusedparty.jpg',
-        category : 'Event',
+        category : 'event',
       },
       {
         title : 'Great Laugh',
         image : '../image/color/laughter.jpg',
-        category : 'Event',
+        category : 'event',
       },
     ]
+
+
     ac.userPrefs = []
 
     ac.includePref = function(category){
-      var i = ac.inArray(category, ac.userPrefs)
+      var i = $.inArray(category, ac.userPrefs)
       if (i > -1) {
         ac.userPrefs.splice(i,1);
       } else {
@@ -65,20 +67,20 @@
       }
     }
 
-ac.prefFilter = function(artCollection){
-  if (ac.userPrefs.length>0){
-    if($.inArray(artcollection.category, ac.userPrefs) < 0)
-    return;
-  }
-  return artCollection;
-}
-
-    //  =+=+=+==+=+=+==+=+=+=    Constructor Function for Photos     =+=+=+==+=+=+==+=+=+=
-    function artWork(title,image,category){
-      this.artTitle     = title
-      this.artImage     = image
-      this.artCategory  = category
+    ac.prefFilter = function(artCollection){
+      if (ac.userPrefs.length>0){
+        if($.inArray(artcollection.category, ac.userPrefs) < 0)
+        return;
+      }
+      return artCollection;
     }
+
+    // //  =+=+=+==+=+=+==+=+=+=    Constructor Function for Photos     =+=+=+==+=+=+==+=+=+=
+    // function artWork(title,image,category){
+    //   this.artTitle     = title
+    //   this.artImage     = image
+    //   this.artCategory  = category
+    // }
 
   }
 }())

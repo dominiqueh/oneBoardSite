@@ -1,7 +1,14 @@
-<div class="row">
-  <div class="portfolio_container">
-    <div class="photo-box" ng-repeat="artWork in ac.artCollection | filter: | orderBy: 'title' ">
-      <img class="grid-photo" src="{{artWork.image}}"/>
-    </div>
+<div class="row portContainer">
+  <br><br><br>
+  <!-- checkboxes for filtering -->
+  <input type="checkbox" ng-click="includePref('portrait')"/> Portrait
+  <input type="checkbox" ng-click="includePref('travel')"/> Travel
+  <input type="checkbox" ng-click="includePref('event')"/> Event</br>
+
+  <!--  photo content to be displayed-->
+  <div class="photo-box" ng-repeat="artWork in ac.artCollection | filter: prefFilter">
+    <img class="grid-photo" src="{{artWork.image}}"/>
+
   </div>
+</div>
 </div>

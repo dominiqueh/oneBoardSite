@@ -19,9 +19,8 @@
 <body ng-controller="artCtrl as ac">
 
   <!--  =+=+=+==+=+=+==+=+=+=     Navigation Bar      =+=+=+==+=+=+==+=+=+= -->
-
+<div class="container-fluid">
   <nav class="navbar navbar-default navbar-fixed-top nav-tabs" role="navigation">
-    <div class="container-fluid">
       <div class="navbar-header">
         <a ui-sref-active="active" ui-sref="home" class="navbar-brand"> Pinja Naamanka </a>
       </div>
@@ -32,12 +31,11 @@
         <li><a ui-sref="blog"> Blog</a></li>
         <li><a ui-sref-active="active" ui-sref="contact"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
       </ul>
-    </div>
   </nav>
+    </div>
 
   <!--  =+=+=+==+=+=+==+=+=+=     Body      =+=+=+==+=+=+==+=+=+= -->
-
-  <div ui-view class="container-fluid main-container">
+  <div ui-view class=" main-container">
     <!-- Partials will fill in content here -->
   </div>
 

@@ -1,4 +1,4 @@
-Boostrap
+Bootstrap
   Dropdown tab
 Angular
   Filter
@@ -12,4 +12,6 @@ Further Styling
   Popover for Blog
 Social media icons
 
-http://jsfiddle.net/65Pyj/
+http://jsfiddle.net/65Pyj/ : filter
+
+Checkboxes under nav
