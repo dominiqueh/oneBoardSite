@@ -3,10 +3,10 @@
   .controller('artCtrl', artController)
 
   function artController(){
-      var ac = this
+    // this is now ac to follow scope of artController
+    var ac = this
 
-  // <!--  =+=+=+==+=+=+==+=+=+=    Hard Coded Images in List      =+=+=+==+=+=+==+=+=+= -->
-
+    // hard-coded images array
     ac.artCollection = [
       {
         title : 'Stairway to Heaven',
@@ -54,8 +54,26 @@
         category : 'Event',
       },
     ]
+    ac.userPrefs = []
 
-  //  =+=+=+==+=+=+==+=+=+=    Constructor Function for Photos     =+=+=+==+=+=+==+=+=+=
+    ac.includePref = function(category){
+      var i = ac.inArray(category, ac.userPrefs)
+      if (i > -1) {
+        ac.userPrefs.splice(i,1);
+      } else {
+        ac.userPrefs.push(category);
+      }
+    }
+
+ac.prefFilter = function(artCollection){
+  if (ac.userPrefs.length>0){
+    if($.inArray(artcollection.category, ac.userPrefs) < 0)
+    return;
+  }
+  return artCollection;
+}
+
+    //  =+=+=+==+=+=+==+=+=+=    Constructor Function for Photos     =+=+=+==+=+=+==+=+=+=
     function artWork(title,image,category){
       this.artTitle     = title
       this.artImage     = image

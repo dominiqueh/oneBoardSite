@@ -11,3 +11,5 @@ Further Styling
   Text Box Overlay on Images in Blog
   Popover for Blog
 Social media icons
+
+http://jsfiddle.net/65Pyj/
