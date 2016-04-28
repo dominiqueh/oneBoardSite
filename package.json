@@ -1,0 +1,19 @@
+{
+  "name": "oneboardsite",
+  "version": "1.0.0",
+  "description": "A template for artists' professional website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dominiqueh/ArtistWebsiteTemplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dominiqueh/ArtistWebsiteTemplate/issues"
+  },
+  "homepage": "https://github.com/dominiqueh/ArtistWebsiteTemplate#readme"
+}
